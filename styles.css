@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-image: url('img/logo.png');
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/fundotwd.jpg') center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: backgroundScale 10s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sobre, .personagens, .galeria {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.character-grid, .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character, .gallery-grid img {
+    margin: 10px;
+}
+
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
